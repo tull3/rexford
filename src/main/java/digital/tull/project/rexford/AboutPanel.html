@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Copyright 2017 William Jackson.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <wicket:panel>
+        <br />
+        <div class="container">
+            <div class="row cols-sm-12 cols-md-10">
+                <div class="col-md-offset-1">
+                    <br />
+                    <h2>Some Details</h2>
+                    <p>&emsp; I'm assuming that you're like me, and when you click a link that says "About," you want some technical details.  Very well.  (Warning: bad security practice ahead.)  Let's start with the Java stuff.  This subdomain is run by a really simple web app that I like to call "Rexford."  Rexford, for those of you who are interested, is named after one of NASCAR's first cup champions.  It is built with the <a href="wicket.apache.org">Wicket</a> framework.  Unlike the other Java web framework that I learned at first, JavaServer Faces, Wicket is more of POJO API, uses very little server-level configuration, and none of the Java EE spec.  Without going into the whole backstory, this essentially has helped me to learn the framework much more thoroughly.  Also, there is no built-in JPA support, so this forced me to get really cozy with JDBC and set up the database connections manually.  Rexford primarily uses an embedded Derby database to store the articles and metadata, but PostgreSQL is being integrated more and more into my work.  It will serve the bulk of the data as Rexford grows in complexity.  Right now, Rexford, Tomcat, and Derby live on a Fedora server with a SSD, and PostgreSQL lives on a RAID 1 openSUSE Leap server with development versions of Rexford.  There is also an Arch system on the network which is used as a FTP, Samba, and Rsync server.</p>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </wicket:panel>
+    </body>
+</html>
